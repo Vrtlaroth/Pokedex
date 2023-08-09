@@ -6,6 +6,9 @@ const Container = styled.div`
   flex: 1;
   background: blue;
   overflow: scroll;
+  :hover {
+    cursor: default;
+  }
 `;
 
 const Item = styled.div<{ isSelected: boolean }>`
