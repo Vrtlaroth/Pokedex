@@ -9,13 +9,13 @@ const Container = styled.div`
 `;
 
 const Item = styled.div<{ isSelected: boolean }>`
-  background: ${(props) => (props.isSelected ? "white" : "#BF4F74")};
+  background: ${(props) => (props.isSelected ? "white" : "transparent")};
 `;
 
 const List = ({
   results,
   selectedPokemon,
-  setSelectedPokemon
+  setSelectedPokemon,
 }: {
   results: Result[];
   selectedPokemon: null | string;
